@@ -1,3 +1,7 @@
+MIT License
+
+Copyright (c) 2018 Jon Wilson
+
 This software includes "A Complete Intro to React", https://github.com/btholt/complete-intro-to-react Copyright (c) 2016 Brian T Holt
 
 Permission is hereby granted, free of charge, to any person obtaining a
