@@ -13,6 +13,10 @@ This site will be for you if:
 - You want to get involved with open source, but have had trouble getting started
 - You want to work on open source projects, like web apps, that aren't just for developers
 
+## Contributing
+
+This project is open source, and contributions are welcomed! Please see CONTRIBUTING.md for more.
+
 ## Minimum Viable Product Must-haves and Maybe-haves
 
 See the ROADMAP.md file for an updated list of next steps.
@@ -23,4 +27,4 @@ The project maintainer(s)' goal is to create and nurture an environment that is 
 
 ## Licensing
 
-This project is copyright Jon Wilson and licensed under the MIT license. Please see LICENSE.md for complete information.
+This is an open source project, licensed under the MIT license, Copyright (c) 2018 Jon Wilson. Please see LICENSE.md for complete information.
