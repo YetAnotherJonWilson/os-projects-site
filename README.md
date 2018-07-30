@@ -23,6 +23,7 @@ This site will be for you if:
 - (Maybe) A link to my (or somebody else's, if a good one exists) open source skeleton
 - Need to decide whether idea submissions will be owned by their submitters, if so, they should not be deletable after someone has started and linked a project
 - Projects, and if applicable, their pages should be owned by individual users
+- If projects have a link to a working demo, in addition to a repo, that link should appear either on the list view, or on the project's page ( only if every project, by default, has its own page)
 - Need to decide whether users need to have profile pages for the MVP
 - If voting is allowed, need to decide how to permit voting--users only? is there a way to verify users, or to semi-verify, maybe through a connected app, like Github?
 - (Maybe) Each project can have a dedicated page, with more details
