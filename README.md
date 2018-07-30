@@ -31,3 +31,7 @@ This site will be for you if:
 - (Maybe) Allow users to vote for specific ideas, to push them closer to the top and make them easier to find
 - (Maybe) There should probably be a way to link to more than one work-in-progress for a specific idea
 - (Maybe) Allow users to vote for specific projects if an idea has more than one work-in-progress
+
+# Licensing
+
+This project is copyright Jon Wilson and licensed under the MIT license. Please see 'LICENSE.md' for complete information.
