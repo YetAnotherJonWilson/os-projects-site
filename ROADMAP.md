@@ -22,3 +22,11 @@
 - At some point add tutorials:
   1.  How to submit a project or idea, what happens next, etc.
   2.  How to make your first contribution (pull request)--maybe link to this great video walk-through of making a PR on Github: https://www.youtube.com/watch?v=YTbRzhQju4c
+- Add "Help wanted", tags and "Teams" features:
+  1.  Each project owner should be able to tag items as "Help Wanted" on the project page, and
+  2.  Also be able to add tags to "Help Wanted" items, like "Node.js", "React", "front end design", etc.
+  3.  This would allow projects to form teams, where members could contribute specific skill sets
+  4.  At some point, users should be able to have a profile page where they list skills.
+- For web apps, the project can be open source, but if there are one or more sites based on the project, the site owner(s) will need to be responsible for Terms of Service and Privacy policies--is there a way to make this easier (maybe ask for contributors with security skill sets)?
+  - Also, of course, no authentication secrets should ever be posted in any public repo--do users need to be reminded of this?
+  - To what degree can the authentication work be done in the public repo, without compromising security--is it just the authentication secrets that need to be hidden? Should site owners be responsible for that whole workflow?
