@@ -26,7 +26,18 @@
   1.  Each project owner should be able to tag items as "Help Wanted" on the project page, and
   2.  Also be able to add tags to "Help Wanted" items, like "Node.js", "React", "front end design", etc.
   3.  This would allow projects to form teams, where members could contribute specific skill sets
-  4.  At some point, users should be able to have a profile page where they list skills.
+  4.  At some point, users should be able to have a profile page where they list skills ("OS specialist", "Node specialist", etc.)
 - For web apps, the project can be open source, but if there are one or more sites based on the project, the site owner(s) will need to be responsible for Terms of Service and Privacy policies--is there a way to make this easier (maybe ask for contributors with security skill sets)?
   - Also, of course, no authentication secrets should ever be posted in any public repo--do users need to be reminded of this?
   - To what degree can the authentication work be done in the public repo, without compromising security--is it just the authentication secrets that need to be hidden? Should site owners be responsible for that whole workflow?
+- Different categories of tags for projects:
+  - Help wanted (tagged by type of help needed)
+  - Type(s) of project
+    - Type of stack
+    - Type of problem being solved
+    - Type of site (?)
+  - Different stages in the process (not necessarily chronological)
+    = idea proposed
+    - discussion started
+    - project launched
+    - site or app running
