@@ -12,6 +12,7 @@ class App extends Component {
     return (
       <div>
         <h1>List of Projects and Ideas</h1>
+        <Project />
       </div>
     );
   }
