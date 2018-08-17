@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 
 class Projects extends Component {
   constructor(props) {
@@ -31,8 +31,8 @@ class Projects extends Component {
               tags={project.tags}
               projectStarted={project.projectStarted}
               links={project.projectLinks}
-            />))}
-      </ul>}
+            />)})}
+      </ul>
     );
   }
 }
