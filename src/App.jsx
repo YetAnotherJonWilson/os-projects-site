@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import Projects from './Projects';
 
 class App extends Component {
   constructor(props) {

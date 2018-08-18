@@ -31,7 +31,9 @@ class Projects extends Component {
               tags={project.tags}
               projectStarted={project.projectStarted}
               links={project.projectLinks}
-            />)})}
+            />
+          );
+        })}
       </ul>
     );
   }
