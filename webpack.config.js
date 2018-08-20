@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   context: __dirname,
-  entry: './js/App.jsx',
+  entry: './src/App.jsx',
   devtool: 'cheap-eval-source-map',
   output: {
     path: path.join(__dirname, 'public'),
@@ -15,5 +15,8 @@ module.exports = {
     colors: true,
     reasons: true,
     chunks: true
+  },
+  module: {
+    rules: [{ test: /\.jsx?$/, loader: 'babel-loader' }]
   }
 };
