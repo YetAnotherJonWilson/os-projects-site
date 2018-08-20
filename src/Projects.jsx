@@ -5,32 +5,30 @@ class Projects extends Component {
     super(props);
 
     this.state = {
-      project: {
-        id: 0,
-        title: '',
-        description: '',
-        individualProjectsArray: [],
-        projectStarted: false,
-        projectLinks: [],
-        submittedBy: '',
-        helpWanted: [],
-        tags: []
-      }
+      projects: [
+        {
+          id: 0,
+          title: 'Test',
+          description: 'first test project',
+          individualProjectsArray: ['title1', 'title2'],
+          projectStarted: false,
+          projectLinks: [],
+          submittedBy: '',
+          helpWanted: [],
+          tags: []
+        }
+      ]
     };
   }
 
   render() {
     return (
       <ul>
-        {/* {this.state.map(project => (
-          <li
-            title={project.title}
-            description={project.description}
-            tags={project.tags}
-            projectStarted={project.projectStarted}
-            links={project.projectLinks}
-          />
-        ))} */}
+        {this.state.projects.map(project => (
+          <li key={project.id}>
+            {project.title}, {project.description}
+          </li>
+        ))}
       </ul>
     );
   }
