@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 
 class Projects extends Component {
   constructor(props) {
@@ -23,17 +22,15 @@ class Projects extends Component {
   render() {
     return (
       <ul>
-        {this.state.map(project => {
-          return (
-            <li
-              title={project.title}
-              description={project.description}
-              tags={project.tags}
-              projectStarted={project.projectStarted}
-              links={project.projectLinks}
-            />
-          );
-        })}
+        {this.state.map(project => (
+          <li
+            title={project.title}
+            description={project.description}
+            tags={project.tags}
+            projectStarted={project.projectStarted}
+            links={project.projectLinks}
+          />
+        ))}
       </ul>
     );
   }
