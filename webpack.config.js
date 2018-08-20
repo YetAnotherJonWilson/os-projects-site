@@ -1,6 +1,8 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
+  devServer: { publicPath: '/public/' },
   context: __dirname,
   entry: './src/App.jsx',
   devtool: 'cheap-eval-source-map',
@@ -17,6 +19,14 @@ module.exports = {
     chunks: true
   },
   module: {
-    rules: [{ test: /\.jsx?$/, loader: 'babel-loader' }]
+    rules: [
+      {
+        enforce: 'pre',
+        test: /\.jsx?$/,
+        loader: 'eslint-loader',
+        exclude: /node_modules/
+      },
+      { test: /\.jsx?$/, loader: 'babel-loader' }
+    ]
   }
 };

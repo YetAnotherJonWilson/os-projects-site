@@ -22,7 +22,7 @@ class Projects extends Component {
   render() {
     return (
       <ul>
-        {this.state.map(project => (
+        {/* {this.state.map(project => (
           <li
             title={project.title}
             description={project.description}
@@ -30,7 +30,7 @@ class Projects extends Component {
             projectStarted={project.projectStarted}
             links={project.projectLinks}
           />
-        ))}
+        ))} */}
       </ul>
     );
   }

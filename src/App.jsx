@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { render } from 'react-dom';
 import Projects from './Projects';
 
 class App extends Component {
@@ -17,5 +18,4 @@ class App extends Component {
     );
   }
 }
-
-export default App;
+render(<App />, document.getElementById('app'));
