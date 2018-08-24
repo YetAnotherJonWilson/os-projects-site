@@ -15,12 +15,14 @@ class AddProjectForm extends Component {
     };
 
     this.updateInput = this.updateInput.bind(this);
-    this.addProject = this.addProject.bind(this);
+    // this.addProject = this.addProject.bind(this);
   }
 
-  addItem() {}
+  // addItem() {}
 
-  updateInput() {}
+  updateInput(text, value) {
+    this.setState({ title: value });
+  }
 
   render() {
     return (
@@ -48,9 +50,9 @@ class AddProjectForm extends Component {
             value={this.state.description}
             onChange={e => this.updateInput('description', e.target.value)}
           />
-          <button onClick={() => this.addItem()}>
+          {/* <button onClick={() => this.addItem()}>
             &#43; Add
-          </button>
+          </button> */}
         </div>
       </div>
     );

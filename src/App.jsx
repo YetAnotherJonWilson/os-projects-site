@@ -15,6 +15,7 @@ class App extends Component {
       <div>
         <h1>List of Projects and Ideas</h1>
         <Projects />
+        <AddProjectForm />
       </div>
     );
   }
