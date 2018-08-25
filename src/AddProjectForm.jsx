@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SimpleStorage from 'react-simple-storage';
+import PropTypes from 'prop-types';
 
 class AddProjectForm extends Component {
   constructor(props) {
@@ -15,13 +16,23 @@ class AddProjectForm extends Component {
     };
 
     this.updateInput = this.updateInput.bind(this);
-    // this.addProject = this.addProject.bind(this);
+    this.addProject = this.addProject.bind(this);
+
+    AddProjectForm.propTypes = {
+      newProject: PropTypes.func
+    };
+
+    AddProjectForm.defaultProps = {
+      newProject: PropTypes.func
+    };
   }
 
-  // addItem() {}
+  addProject() {
+    this.props.newProject(this.state.title, this.state.description);
+  }
 
   updateInput(text, value) {
-    this.setState({ title: value });
+    this.setState({ [text]: value });
   }
 
   render() {
@@ -30,10 +41,8 @@ class AddProjectForm extends Component {
         <SimpleStorage parent={this} />
         <div
           style={{
-            padding: 50,
             textAlign: 'left',
-            maxWidth: 500,
-            margin: 'auto'
+            maxWidth: 500
           }}
         >
           Add Project
@@ -50,9 +59,9 @@ class AddProjectForm extends Component {
             value={this.state.description}
             onChange={e => this.updateInput('description', e.target.value)}
           />
-          {/* <button onClick={() => this.addItem()}>
-            &#43; Add
-          </button> */}
+          <button onClick={this.addProject}>
+            Add
+          </button>
         </div>
       </div>
     );

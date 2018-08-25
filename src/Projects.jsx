@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AddProjectForm from './AddProjectForm';
 
 class Projects extends Component {
   constructor(props) {
@@ -19,17 +20,33 @@ class Projects extends Component {
         }
       ]
     };
+
+    this.addNewProject = this.addNewProject.bind(this);
+  }
+
+  addNewProject(title, description) {
+    this.setState(prevState => ({
+      projects: [
+        ...prevState.projects,
+        { id: this.state.projects.length, title, description }
+      ]
+    }));
+
+    console.log(this.state);
   }
 
   render() {
     return (
-      <ul>
-        {this.state.projects.map(project => (
-          <li key={project.id}>
-            {project.title}, {project.description}
-          </li>
-        ))}
-      </ul>
+      <div>
+        <AddProjectForm newProject={this.addNewProject} />
+        <ul>
+          {this.state.projects.map(project => (
+            <li key={project.id}>
+              {project.title}, {project.description}
+            </li>
+          ))}
+        </ul>
+      </div>
     );
   }
 }

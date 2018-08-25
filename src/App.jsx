@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Projects from './Projects';
-import AddProjectForm from './AddProjectForm';
 
 class App extends Component {
   constructor(props) {
@@ -15,7 +14,6 @@ class App extends Component {
       <div>
         <h1>List of Projects and Ideas</h1>
         <Projects />
-        <AddProjectForm />
       </div>
     );
   }
