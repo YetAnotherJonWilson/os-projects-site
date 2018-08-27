@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SimpleStorage from 'react-simple-storage';
 import AddProjectForm from './AddProjectForm';
 
 class Projects extends Component {
@@ -38,6 +39,8 @@ class Projects extends Component {
   render() {
     return (
       <div>
+        <SimpleStorage parent={this} />
+
         <AddProjectForm newProject={this.addNewProject} />
         <ul>
           {this.state.projects.map(project => (

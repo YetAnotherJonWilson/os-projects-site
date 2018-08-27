@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SimpleStorage from 'react-simple-storage';
 import PropTypes from 'prop-types';
 
 class AddProjectForm extends Component {
@@ -37,32 +36,29 @@ class AddProjectForm extends Component {
 
   render() {
     return (
-      <div>
-        <SimpleStorage parent={this} />
-        <div
-          style={{
-            textAlign: 'left',
-            maxWidth: 500
-          }}
-        >
-          Add Project
-          <br />
-          <input
-            type="text"
-            placeholder="Project title here"
-            value={this.state.title}
-            onChange={e => this.updateInput('title', e.target.value)}
-          />
-          <input
-            type="text"
-            placeholder="Write a description of the project"
-            value={this.state.description}
-            onChange={e => this.updateInput('description', e.target.value)}
-          />
-          <button onClick={this.addProject}>
-            Add
-          </button>
-        </div>
+      <div
+        style={{
+          textAlign: 'left',
+          maxWidth: 500
+        }}
+      >
+        Add Project
+        <br />
+        <input
+          type="text"
+          placeholder="Project title here"
+          value={this.state.title}
+          onChange={e => this.updateInput('title', e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Write a description of the project"
+          value={this.state.description}
+          onChange={e => this.updateInput('description', e.target.value)}
+        />
+        <button onClick={this.addProject}>
+          Add
+        </button>
       </div>
     );
   }
