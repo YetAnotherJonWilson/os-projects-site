@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SimpleStorage from 'react-simple-storage';
 import AddProjectForm from './AddProjectForm';
 
-class Projects extends Component {
+export default class Projects extends Component {
   constructor(props) {
     super(props);
 
@@ -53,5 +53,3 @@ class Projects extends Component {
     );
   }
 }
-
-export default Projects;

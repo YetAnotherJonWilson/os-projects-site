@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class AddProjectForm extends Component {
+export default class AddProjectForm extends Component {
   constructor(props) {
     super(props);
 
@@ -35,6 +35,23 @@ class AddProjectForm extends Component {
   }
 
   render() {
+    const titleInput = (
+      <input
+        type="text"
+        placeholder="Project title here"
+        value={this.state.title}
+        onChange={e => this.updateInput('title', e.target.value)}
+      />
+    );
+    const projectInput = (
+      <input
+        type="text"
+        placeholder="Write a description of the project"
+        value={this.state.description}
+        onChange={e => this.updateInput('description', e.target.value)}
+      />
+    );
+
     return (
       <div
         style={{
@@ -44,18 +61,8 @@ class AddProjectForm extends Component {
       >
         Add Project
         <br />
-        <input
-          type="text"
-          placeholder="Project title here"
-          value={this.state.title}
-          onChange={e => this.updateInput('title', e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Write a description of the project"
-          value={this.state.description}
-          onChange={e => this.updateInput('description', e.target.value)}
-        />
+        {titleInput}
+        {projectInput}
         <button onClick={this.addProject}>
           Add
         </button>
@@ -63,5 +70,3 @@ class AddProjectForm extends Component {
     );
   }
 }
-
-export default AddProjectForm;
