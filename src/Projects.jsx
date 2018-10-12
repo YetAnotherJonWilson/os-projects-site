@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SimpleStorage from 'react-simple-storage';
+import { Table } from 'reactstrap';
 import AddProjectForm from './AddProjectForm';
 
 export default class Projects extends Component {
@@ -42,13 +43,22 @@ export default class Projects extends Component {
         <SimpleStorage parent={this} />
 
         <AddProjectForm newProject={this.addNewProject} />
-        <ul>
-          {this.state.projects.map(project => (
-            <li key={project.id}>
-              {project.title}, {project.description}
-            </li>
-          ))}
-        </ul>
+        <Table hover>
+          <thead>
+            <tr>
+              <th>Project Title</th>
+              <th>Project Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.state.projects.map(project => (
+              <tr key={project.id}>
+                <th scope="row">{project.title}</th>
+                <td>{project.description}</td>
+              </tr>
+            ))}
+          </tbody>
+        </Table>
       </div>
     );
   }
